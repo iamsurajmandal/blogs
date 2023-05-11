@@ -1,15 +1,15 @@
 import React, { Suspense, lazy } from "react";
 import type { HeadFC, PageProps } from "gatsby"
 
-const Home = lazy(() => import('../components/Home'));
+const About = lazy(() => import('../components/About'));
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <Suspense>
-      <Home />
+      <About />
       </Suspense>
   )
 }
 
 export default IndexPage
 
-export const Head: HeadFC = () => <title>Home Page</title>
+export const Head: HeadFC = () => <title>About Page</title>
